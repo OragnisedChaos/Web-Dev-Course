@@ -6,6 +6,32 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Heelo Duniya</h1>
+    <button onclick="clickMe(65,1.8);">Enter</button>
+    <script>
+        function fizzBuzzFunction(){
+           let fizzBuzzArray = [];
+
+            for(let i = 1; i <=100;i++){
+                fizzBuzzArray.push(i);
+            }
+            for(let i =0 ; i < fizzBuzzArray.length;i++){
+                if(fizzBuzzArray[i] % 3 === 0 && fizzBuzzArray[i] % 5 ===0){
+                    fizzBuzzArray[i]="fizzBuzz";
+                }
+                else if(fizzBuzzArray[i] % 3 === 0){
+                    fizzBuzzArray[i]="fizz";
+                }
+                else if(fizzBuzzArray[i] % 5 ===0){
+                    fizzBuzzArray[i]="buzz";
+                }
+            }
+            return fizzBuzzArray;
+        }
+        function clickMe(){
+            let fizzBuzz = fizzBuzzFunction();
+            console.log(fizzBuzz);
+        }
+        
+    </script>
   </body>
 </html>
